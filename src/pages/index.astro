@@ -1,0 +1,51 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Logo from '../components/Logo.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<h1>
+				<Logo size="64px" />
+				<span>wasteof.live</span>
+			</h1>
+
+			<p>The weekly podcast, with wasteof.money users.</p>
+
+			<h3>Why?</h3>
+
+			<p>
+				We want to connect the wasteof.money community together,
+				with fun, entertaining, and interesting podcast episodes.
+				Our goal is to attract more users to wasteof.money as a whole
+				and let the world know about how awesome of a platform it is!
+			</p>
+
+			<h3>Our Team</h3>
+			<p>Obviously, we wouldn't exist without these AWESOME people!</p>
+
+			<ul>
+				<li>SiliconeCB_</li>
+				<li>Skylar</li>
+				<li>radi8</li>
+				<li>Flux</li>
+			</ul>
+
+			<h3>Tune In</h3>
+			<p>Coming soon</p>
+		</main>
+
+		<Footer />
+	</body>
+</html>
